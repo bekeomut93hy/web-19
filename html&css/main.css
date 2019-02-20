@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box; }
+
+.menu {
+  background-color: #D5B0AC;
+  text-align: center; }
+
+.menu_vertical {
+  width: 200px;
+  overflow: hidden; }
+  .menu_vertical span {
+    display: block;
+    text-align: left;
+    width: 100%; }
+
+span {
+  text-align: center;
+  font-size: 20px;
+  color: #402F2A;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  padding: 0px 30px; }
+  span:hover {
+    background-color: #9CD08F;
+    color: #FFFFFF; }
+
+/*# sourceMappingURL=main.css.map */
