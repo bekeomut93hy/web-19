@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="./creat-question.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./home_page.css" />
+    <title>Quyet De</title>
+  </head>
+  <body>
+    <div class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="/" class="navbar-brand"> Quyết đê xem nào </a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="/creat-question.html"> Hỏi nhanh </a></li>
+          <li class="active"><a href="/"> Đáp gọn</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="container">
+      <h1 class="text-center" id="text-question"> {question} </h1>
+      <form action="./api/question/" method="post">
+        <div class="row text-center">
+          <div class="col-md-6">
+            <button
+              type="submit"
+              class="btn btn-danger btn-lg"
+              name="btn-click"
+              value="no"
+            >
+              <i class="fas fa-thumbs-down"></i>
+              Sai / Không / Trái
+            </button>
+          </div>
+          <div class="col-md-6">
+            <button
+              type="submit"
+              class="btn btn-primary btn-lg"
+              name="btn-click"
+              value="yes"
+            >
+              <i class="fas fa-thumbs-up"></i>
+              Đúng / Có / Phải
+            </button>
+          </div>
+        </div>
+        <div class="row text-center" id="next">
+          <button
+            type="submit"
+            class="btn btn-default"
+            name="btn-click"
+            value="vote"
+          >
+            Kết quả vote
+          </button>
+          <button
+            type="submit"
+            class="btn btn-default"
+            name="btn-click"
+            value="cauhoikhac"
+          >
+            Câu hỏi khác
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

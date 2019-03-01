@@ -1,0 +1,15 @@
+*{
+    box-sizing:  border-box;
+    margin : 0;
+    padding : 0;
+}
+
+#next .btn{
+    width : 100px;
+}
+#next{
+    margin-top : 50px;
+}
+#text-question {
+    margin : 50px 0px;
+}

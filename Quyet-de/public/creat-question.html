@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="./creat-question.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Quyet De</title>
+  </head>
+  <body>
+    <div class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="/" class="navbar-brand"> Quyết đê xem nào </a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="/creat-question.html"> Hỏi nhanh </a></li>
+          <li class="active"><a href="/"> Đáp gọn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="container">
+      <h1>Phàm những chuyện trong thiên hạ nên hỏi vợ / mẹ và làm ngược lại</h1>
+      <form action="/creat-question" method="POST">
+        <textarea id="content" class="input" rows="6" name="content">
+        </textarea>
+        <div id="number">200 charecters left</div>
+        <input class="btn btn-success" type="submit" value="Gửi" />
+      </form>
+    </div>
+    <script src="./creat-question.js"></script>
+  </body>
+</html>
