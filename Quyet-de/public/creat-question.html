@@ -15,6 +15,7 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="./creat-question.js"></script>
     <title>Quyet De</title>
   </head>
   <body>
@@ -31,12 +32,12 @@
     </div>
     <div id="container">
       <h1>Phàm những chuyện trong thiên hạ nên hỏi vợ / mẹ và làm ngược lại</h1>
-      <form action="/creat-question" method="POST">
+
         <textarea id="content" class="input" rows="6" name="content">
         </textarea>
         <div id="number">200 charecters left</div>
-        <input class="btn btn-success" type="submit" value="Gửi" />
-      </form>
+        <input id="sendQuestion" class="btn btn-success" type="submit" value="Gửi" />
+
     </div>
     <script src="./creat-question.js"></script>
   </body>

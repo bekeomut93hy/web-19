@@ -1,5 +1,5 @@
-window.addEventListener("load", event => {
-  let input = document.getElementById("content");
+$(document).ready(() => {
+  const input = document.getElementById("content");
   input.value = null;
   input.addEventListener("input", event => {
     let number = input.value.length;
@@ -9,5 +9,15 @@ window.addEventListener("load", event => {
     }
     const remain = document.getElementById("number");
     remain.innerHTML = 200 - number + " charecter left";
+  });
+  document.getElementById("sendQuestion").addEventListener("click", () => {
+    $.ajax({
+      type: "POST",
+      url: "/create-question",
+      data: {content : input.value},
+      success: function (data) {
+         window.location.assign(data.url);
+      }
+  });
   });
 });

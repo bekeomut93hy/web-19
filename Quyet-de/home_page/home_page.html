@@ -22,6 +22,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./home_page.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/home_page.js"></script>
     <title>Quyet De</title>
   </head>
   <body>
@@ -38,13 +40,12 @@
     </div>
 
     <div id="container">
-      <h1 class="text-center" id="text-question"> {question} </h1>
-      <form action="./api/question/" method="post">
-        <div class="row text-center">
+      <h1 class="text-center" id="text-question"> </h1>
+      <div class="row text-center">
           <div class="col-md-6">
             <button
               type="submit"
-              class="btn btn-danger btn-lg"
+              class="btn btn-danger btn-lg "
               name="btn-click"
               value="no"
             >
@@ -55,9 +56,10 @@
           <div class="col-md-6">
             <button
               type="submit"
-              class="btn btn-primary btn-lg"
+              class="btn btn-primary btn-lg "
               name="btn-click"
               value="yes"
+
             >
               <i class="fas fa-thumbs-up"></i>
               Đúng / Có / Phải
@@ -67,9 +69,10 @@
         <div class="row text-center" id="next">
           <button
             type="submit"
-            class="btn btn-default"
+            class="btn btn-default "
             name="btn-click"
             value="vote"
+        
           >
             Kết quả vote
           </button>
@@ -78,11 +81,11 @@
             class="btn btn-default"
             name="btn-click"
             value="cauhoikhac"
+  
           >
             Câu hỏi khác
           </button>
         </div>
-      </form>
     </div>
   </body>
 </html>
