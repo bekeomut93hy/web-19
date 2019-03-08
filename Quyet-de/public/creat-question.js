@@ -10,7 +10,11 @@ $(document).ready(() => {
     const remain = document.getElementById("number");
     remain.innerHTML = 200 - number + " charecter left";
   });
-  document.getElementById("sendQuestion").addEventListener("click", () => {
+  document.getElementById("sendQuestion").addEventListener("click", (event) => {
+    // if(input.value === "") 
+    //  window.alert("vui long nhap noi dung");
+    //  else 
+    //event.preventDefault(); xoa event mac dinh cua element  
     $.ajax({
       type: "POST",
       url: "/create-question",

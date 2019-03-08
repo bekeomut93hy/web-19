@@ -1,6 +1,7 @@
 $(document).ready(() => {
     let idQuestion = {} ;
     getRandomQuest(idQuestion);
+    console.log(idQuestion.id);
     const button = document.getElementsByTagName("button");
     for(let i=0 ; i<button.length;++i){
         button[i].addEventListener("click",()=>{
@@ -23,9 +24,10 @@ function getRandomQuest(idQuestion){
     $.ajax({
         url : "/get-random-question",
         type : "GET" ,
+        async : false,
         success : (data)=>{
             document.getElementById("text-question").innerText = data.content;
-            idQuestion.id = data.id ;
+            idQuestion.id = data._id ;
         },
         error : (error) => {
             console.log(error);
