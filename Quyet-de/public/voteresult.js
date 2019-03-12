@@ -12,7 +12,9 @@ $(document).ready(() => {
               let noPercent = 100 - yesPercent;
               if(data.no == data.yes) {yesPercent = 50; noPercent =50;}
               document.getElementById("yes-percent").innerText = `${yesPercent.toFixed(2)}%`;
-              document.getElementById("no-percent").innerText = `${noPercent.toFixed(2)}%`
+              document.getElementById("yes-percent").style.width = `${yesPercent.toFixed(2)}%`;
+              document.getElementById("no-percent").innerText = `${noPercent.toFixed(2)}%`;
+              document.getElementById("no-percent").style.width = `${noPercent.toFixed(2)}%`;
           }
           else document.getElementById('question-content').innerText = "Question not found";
 

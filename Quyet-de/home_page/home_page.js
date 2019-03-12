@@ -3,7 +3,7 @@ $(document).ready(() => {
     getRandomQuest(idQuestion);
     console.log(idQuestion.id);
     const button = document.getElementsByTagName("button");
-    for(let i=0 ; i<button.length;++i){
+    for(let i=1 ; i<button.length;++i){
         button[i].addEventListener("click",()=>{
             if(button[i].value=="cauhoikhac") {
                 getRandomQuest(idQuestion);
