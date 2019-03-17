@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Youtube search</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./main.css">
+    <script src="./main.js"></script>
+</head>
+<body>
+    <div id="loading">
+            <div class="d-flex justify-content-center loading-content">
+                    <div class="spinner-border text-danger" style="width: 3rem; height: 3rem" role="status">
+                    </div>
+                    <h1 class="text-danger" > Loading </h1>
+                  </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <img src="https://www1-lw.xda-cdn.com/files/2017/08/After-12-Years-Google-Gives-YouTube-a-New-Logo.png" alt="">
+                <h1>Let's search!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <form id="search">
+                    <div class="form-group">
+                        <input type="text" name="keyword" id="keyword" class="form-control" required>
+                        <br>
+                        <input type="submit" id="btn-search" class="btn btn-primary form-control" value="Submit"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" id="result-list">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
